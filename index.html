@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07110f" />
+  <meta name="description" content="دانلود راه‌نما؛ راهنمای مترو و BRT با نمایش ایستگاه‌ها، مسیر رفت و برگشت و زمان‌بندی حرکت." />
+  <title>راه‌نما — مترو و BRT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#07110f;--card:#0e1b18;--muted:#9ab0aa;--text:#f4fbf8;--line:#1d312c;--green:#16d17d;--red:#ff4d57;--yellow:#ffcb45;--blue:#43a9ff;--radius:28px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 5%,rgba(22,209,125,.13),transparent 24%),radial-gradient(circle at 5% 45%,rgba(255,77,87,.08),transparent 26%),var(--bg);color:var(--text);font-family:Vazirmatn,system-ui,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}
+    .wrap{width:min(1180px,calc(100% - 32px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:22px}.mark{width:42px;height:42px;border-radius:14px;background:#fff;color:#07110f;display:grid;place-items:center;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.22)}.navlinks{display:flex;gap:24px;color:#c1d1cc;font-size:14px}.navbtn{padding:11px 17px;border:1px solid #29413a;border-radius:14px;background:#0c1715}
+    .hero{min-height:710px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px;padding:38px 0 80px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#c5d7d1;background:#0d1a17;border:1px solid #223a33;border-radius:999px;padding:8px 12px;font-size:13px}.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 7px rgba(22,209,125,.1)}h1{font-size:clamp(50px,7vw,92px);line-height:1.02;margin:24px 0 22px;letter-spacing:-3px}.grad{background:linear-gradient(110deg,#fff 0,#bdeed7 50%,#62dfa4 100%);-webkit-background-clip:text;color:transparent}.lead{font-size:18px;line-height:2;color:#afc2bc;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.primary,.secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:17px;font-weight:800}.primary{background:#f5fbf8;color:#07110f}.secondary{border:1px solid #294139;background:#0d1a17;color:#d8e7e2}.meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#819991;font-size:13px}.meta b{color:#d9e6e2}
+    .visual{position:relative;min-height:560px;display:grid;place-items:center}.phone{width:315px;height:620px;border:1px solid #2d453e;background:linear-gradient(180deg,#101f1b,#091310);border-radius:48px;padding:12px;box-shadow:0 44px 100px rgba(0,0,0,.45);transform:rotate(-4deg);position:relative;z-index:2}.screen{height:100%;border-radius:38px;background:#f5f7f4;color:#10201b;padding:24px 17px;overflow:hidden}.screenTop{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:800}.appTitle{font-size:25px;font-weight:900;margin:28px 0 5px}.appSub{font-size:11px;color:#78837f;margin-bottom:18px}.switch{background:#e9ece8;border-radius:14px;padding:5px;display:grid;grid-template-columns:1fr 1fr;gap:5px;font-size:11px}.switch span{padding:9px;border-radius:10px;text-align:center;font-weight:800}.switch .active{background:#10201b;color:white}.routeCard{margin-top:14px;background:white;border-radius:20px;padding:14px;box-shadow:0 10px 30px rgba(14,30,24,.08)}.rtitle{display:flex;justify-content:space-between;font-size:12px;font-weight:900}.station{display:flex;align-items:center;gap:11px;padding:12px 2px;border-bottom:1px solid #edf0ed}.dot{width:12px;height:12px;border-radius:50%;border:3px solid currentColor;background:white}.station small{display:block;color:#7f8b87;font-size:9px}.time{margin-right:auto;font-size:10px;font-weight:900;color:#334741}.linePath{position:absolute;inset:4% -14% auto auto;width:130%;height:84%;z-index:0;opacity:.9}.linePath i{position:absolute;display:block;border-radius:999px}.l1{width:86%;height:7px;background:var(--red);right:-8%;top:24%;transform:rotate(-14deg)}.l2{width:78%;height:7px;background:var(--green);left:-6%;top:63%;transform:rotate(17deg)}.l3{width:48%;height:7px;background:var(--yellow);left:4%;top:43%;transform:rotate(-48deg)}.node{width:24px;height:24px;background:var(--bg);border:6px solid #fff;border-radius:50%;position:absolute;box-shadow:0 0 0 4px rgba(255,255,255,.05)}.n1{right:4%;top:14%}.n2{left:2%;top:55%}.n3{left:27%;top:25%}.floatTag{position:absolute;background:#f5fbf8;color:#0b1713;border-radius:18px;padding:11px 14px;font-size:12px;font-weight:900;z-index:3;box-shadow:0 18px 42px rgba(0,0,0,.3)}.tag1{right:-3%;top:12%}.tag2{left:-4%;bottom:14%}
+    .section{padding:95px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}.kicker{color:#69dea8;font-size:13px;font-weight:800}.section h2{font-size:clamp(32px,4vw,54px);margin:8px 0;letter-spacing:-1.5px}.section p{color:#9db0aa;line-height:1.9}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(180deg,rgba(17,31,27,.95),rgba(11,22,19,.95));border:1px solid #1e352e;border-radius:25px;padding:24px;min-height:220px;position:relative;overflow:hidden}.icon{width:48px;height:48px;border-radius:16px;background:#142720;display:grid;place-items:center;font-size:22px;margin-bottom:26px}.card h3{margin:0 0 9px;font-size:18px}.card p{font-size:14px;margin:0}.card::after{content:"";position:absolute;width:80px;height:6px;border-radius:99px;left:-18px;bottom:23px;background:var(--green);transform:rotate(-8deg)}.red::after{background:var(--red)}.yellow::after{background:var(--yellow)}.blue::after{background:var(--blue)}
+    .transport{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mode{border-radius:30px;padding:30px;border:1px solid #263d36;min-height:360px;background:#0b1714;position:relative;overflow:hidden}.mode.metro{background:radial-gradient(circle at 85% 10%,rgba(255,77,87,.13),transparent 30%),#0b1714}.mode.brt{background:radial-gradient(circle at 85% 10%,rgba(22,209,125,.13),transparent 30%),#0b1714}.modeNum{font-size:88px;font-weight:900;opacity:.04;position:absolute;left:18px;top:0}.chip{display:inline-flex;border:1px solid #314a42;border-radius:999px;padding:7px 11px;font-size:12px}.mode h3{font-size:32px;margin:45px 0 12px}.points{display:grid;gap:10px;margin-top:22px}.point{display:flex;align-items:center;gap:10px;color:#b9cbc5;font-size:14px}.point:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green)}.metro .point:before{background:var(--red)}
+    .download{margin:70px 0 110px;border-radius:36px;padding:48px;background:linear-gradient(120deg,#f5fbf8,#dfece7);color:#0a1612;display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;position:relative;overflow:hidden}.download:after{content:"";position:absolute;width:380px;height:380px;border:42px solid rgba(11,28,22,.06);border-radius:50%;left:-130px;top:-130px}.download h2{margin:0 0 10px;font-size:42px}.download p{color:#49605a;margin:0;max-width:620px}.download .primary{background:#0a1612;color:white;position:relative;z-index:2;min-width:210px}.footer{padding:0 0 38px;color:#728880;font-size:13px;display:flex;justify-content:space-between;border-top:1px solid #193029;padding-top:30px}.faq{display:grid;gap:10px;max-width:850px;margin:0 auto}.faq details{border:1px solid #203a32;background:#0d1b17;border-radius:19px;padding:18px 20px}.faq summary{cursor:pointer;font-weight:800}.faq p{font-size:14px;margin-bottom:0}
+    @media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:35px}.visual{order:-1;min-height:500px;transform:scale(.88);margin:-30px 0}.grid{grid-template-columns:1fr 1fr}.transport{grid-template-columns:1fr}.download{grid-template-columns:1fr;padding:32px}.download .primary{width:100%}}
+    @media(max-width:620px){.wrap{width:min(100% - 22px,1180px)}.hero{gap:16px}.visual{transform:scale(.72);margin:-80px 0}.hero h1{font-size:54px;letter-spacing:-2px}.lead{font-size:15px}.actions>a{width:100%}.grid{grid-template-columns:1fr}.section{padding:70px 0}.sectionHead{display:block}.download{margin-bottom:70px}.download h2{font-size:32px}.footer{gap:15px;flex-direction:column}.meta{gap:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#"><span class="mark">ر</span><span>راه‌نما</span></a>
+      <div class="navlinks"><a href="#features">امکانات</a><a href="#modes">مترو و BRT</a><a href="#faq">پرسش‌ها</a></div>
+      <a class="navbtn" href="https://github.com/sahandse/metro" target="_blank" rel="noreferrer">پروژه راه‌نما</a>
+    </nav>
+
+    <main class="hero">
+      <section>
+        <div class="eyebrow"><span class="pulse"></span> راهنمای حمل‌ونقل شهری، ساده و سریع</div>
+        <h1>مسیر شهر را<br><span class="grad">واضح‌تر ببین.</span></h1>
+        <p class="lead">راه‌نما برای پیدا کردن ایستگاه‌ها، بررسی خطوط مترو و BRT، انتخاب جهت رفت و برگشت و دیدن زمان حرکت طراحی شده؛ یک تجربه فارسی، خلوت و کاربردی برای رفت‌وآمد روزانه.</p>
+        <div class="actions">
+          <a class="primary" href="https://github.com/sahandse/metro/releases/latest" target="_blank" rel="noreferrer">دانلود آخرین نسخه اندروید ↓</a>
+          <a class="secondary" href="#features">دیدن امکانات</a>
+        </div>
+        <div class="meta"><span><b>Rahnama 1.3.1</b> نسخه فعلی</span><span>•</span><span>مترو + BRT</span><span>•</span><span>رابط فارسی و راست‌چین</span></div>
+      </section>
+
+      <section class="visual" aria-label="پیش‌نمایش رابط کاربری راه‌نما">
+        <div class="linePath"><i class="l1"></i><i class="l2"></i><i class="l3"></i><b class="node n1"></b><b class="node n2"></b><b class="node n3"></b></div>
+        <div class="floatTag tag1">🚇 مسیر مترو</div><div class="floatTag tag2">🚌 خط BRT</div>
+        <div class="phone"><div class="screen">
+          <div class="screenTop"><span>۱۲:۲۹</span><span>● ● ●</span></div>
+          <div class="appTitle">کجا می‌ری؟</div><div class="appSub">مسیر مناسب را سریع پیدا کن</div>
+          <div class="switch"><span class="active">مترو</span><span>BRT</span></div>
+          <div class="routeCard"><div class="rtitle"><span>خط ۱ — تجریش تا کهریزک</span><span style="color:#e7444e">●</span></div>
+            <div class="station" style="color:#e7444e"><span class="dot"></span><div><b>تجریش</b><small>پایانه • جهت جنوب</small></div><span class="time">۵ دقیقه</span></div>
+            <div class="station" style="color:#e7444e"><span class="dot"></span><div><b>شهید بهشتی</b><small>تقاطعی • خط ۳</small></div><span class="time">۱۸ دقیقه</span></div>
+            <div class="station" style="color:#e7444e"><span class="dot"></span><div><b>امام خمینی</b><small>تقاطعی • خط ۲</small></div><span class="time">۳۲ دقیقه</span></div>
+          </div>
+        </div></div>
+      </section>
+    </main>
+  </div>
+
+  <section class="section" id="features"><div class="wrap">
+    <div class="sectionHead"><div><span class="kicker">طراحی‌شده برای رفت‌وآمد واقعی</span><h2>اطلاعاتی که همان لحظه لازم داری</h2></div><p>بدون شلوغی؛ از انتخاب خط تا رسیدن به ایستگاه مقصد.</p></div>
+    <div class="grid">
+      <article class="card red"><div class="icon">🚇</div><h3>مرکز اطلاعات ایستگاه</h3><p>نوع خط، وضعیت ایستگاه، پایانه یا تقاطعی بودن و جهت حرکت قطار را یکجا ببین.</p></article>
+      <article class="card"><div class="icon">↔️</div><h3>رفت و برگشت</h3><p>جهت مسیر را عوض کن و اطلاعات رفت و برگشت هر خط را جدا و واضح بررسی کن.</p></article>
+      <article class="card yellow"><div class="icon">⏱️</div><h3>زمان سفر</h3><p>زمان حرکت، مدت تقریبی مسیر و رسیدن به مقصد را در راهنمای مسیر مشاهده کن.</p></article>
+      <article class="card blue"><div class="icon">🗺️</div><h3>نقشه مترو</h3><p>نمایش شبکه خطوط با تمرکز روی خوانایی، رنگ رسمی خطوط و نقاط تقاطعی.</p></article>
+      <article class="card"><div class="icon">🚌</div><h3>BRT جدا از مترو</h3><p>خطوط اتوبوس تندرو در بخش مستقل تا انتخاب وسیله نقلیه سریع‌تر و ساده‌تر باشد.</p></article>
+      <article class="card red"><div class="icon">📍</div><h3>فهرست کامل ایستگاه‌ها</h3><p>ایستگاه‌ها قابل انتخاب‌اند و جزئیات هر ایستگاه در صفحه اختصاصی نمایش داده می‌شود.</p></article>
+    </div>
+  </div></section>
+
+  <section class="section" id="modes"><div class="wrap">
+    <div class="sectionHead"><div><span class="kicker">دو شبکه، یک تجربه یکپارچه</span><h2>مترو و BRT، هرکدام سر جای خود</h2></div></div>
+    <div class="transport">
+      <article class="mode metro"><span class="modeNum">M</span><span class="chip">METRO / مترو</span><h3>زیر شهر، مستقیم‌تر.</h3><p>خط‌ها بر اساس رنگ و شماره قابل تشخیص‌اند و اطلاعات هر ایستگاه برای تصمیم‌گیری سریع‌تر در دسترس است.</p><div class="points"><span class="point">ایستگاه‌های عادی، تقاطعی و پایانه</span><span class="point">انتخاب جهت رفت و برگشت</span><span class="point">زمان‌بندی حرکت و زمان سفر</span></div></article>
+      <article class="mode brt"><span class="modeNum">B</span><span class="chip">BRT / اتوبوس تندرو</span><h3>روی شهر، سریع‌تر.</h3><p>بخش مستقل BRT برای مرور خطوط و ایستگاه‌ها بدون قاطی شدن اطلاعات با شبکه مترو.</p><div class="points"><span class="point">نمایش مستقل خطوط BRT</span><span class="point">ایستگاه‌ها و جهت مسیر</span><span class="point">طراحی هماهنگ با مترو</span></div></article>
+    </div>
+  </div></section>
+
+  <section class="section" id="faq"><div class="wrap">
+    <div class="sectionHead"><div><span class="kicker">پرسش‌های پرتکرار</span><h2>قبل از نصب</h2></div></div>
+    <div class="faq">
+      <details open><summary>راه‌نما چه چیزی را پوشش می‌دهد؟</summary><p>تمرکز برنامه روی مترو و BRT، ایستگاه‌ها، مسیرها، جهت رفت و برگشت و اطلاعات زمانی موردنیاز سفر شهری است.</p></details>
+      <details><summary>برای دیدن صفحه اصلی برنامه باید موقعیت مکانی روشن باشد؟</summary><p>ساختار برنامه طوری طراحی شده که مرور خطوط و ایستگاه‌ها وابسته به روشن بودن اجباری موقعیت مکانی نباشد.</p></details>
+      <details><summary>آخرین نسخه را از کجا دانلود کنم؟</summary><p>دکمه «دانلود آخرین نسخه اندروید» همیشه به آخرین Release رسمی پروژه راه‌نما در GitHub متصل است.</p></details>
+    </div>
+  </div></section>
+
+  <div class="wrap"><section class="download"><div><h2>راه‌نما را همراهت داشته باش.</h2><p>نسخه اندروید را نصب کن و مسیر مترو و BRT را با تجربه‌ای سریع‌تر، خلوت‌تر و فارسی بررسی کن.</p></div><a class="primary" href="https://github.com/sahandse/metro/releases/latest" target="_blank" rel="noreferrer">دریافت راه‌نما ↓</a></section>
+  <footer class="footer"><span>© ۲۰۲۶ Rahnama — راه‌نما</span><span>طراحی برای مترو و BRT</span></footer></div>
+</body>
+</html>
