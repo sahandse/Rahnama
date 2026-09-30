@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06100E"/>
+      <stop offset="1" stop-color="#0A1814"/>
+    </linearGradient>
+    <linearGradient id="metro" x1="120" y1="760" x2="1460" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5963"/>
+      <stop offset=".35" stop-color="#FFD257"/>
+      <stop offset=".68" stop-color="#52B8FF"/>
+      <stop offset="1" stop-color="#22D68A"/>
+    </linearGradient>
+    <linearGradient id="brt" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF744F"/>
+      <stop offset="1" stop-color="#FF9C4A"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#g1)"/>
+  <circle cx="1330" cy="120" r="180" fill="#22D68A" fill-opacity=".08" filter="url(#blur)"/>
+  <circle cx="220" cy="560" r="210" fill="#FF5963" fill-opacity=".05" filter="url(#blur)"/>
+
+  <!-- Tehran skyline -->
+  <g opacity=".16" stroke="#BFD4CC" stroke-width="3" fill="none">
+    <!-- Milad Tower -->
+    <path d="M1225 660V325M1208 660h34M1214 325h22M1218 300h14M1221 270h8"/>
+    <path d="M1190 420h70l-12-36h-46l-12 36Z" fill="#BFD4CC" fill-opacity=".08"/>
+    <path d="M1201 382h48l-8-28h-32l-8 28Z" fill="#BFD4CC" fill-opacity=".08"/>
+    <!-- Azadi Tower -->
+    <path d="M230 670c45-130 85-195 135-195s90 65 135 195"/>
+    <path d="M265 670c35-80 63-122 100-122s65 42 100 122"/>
+    <path d="M300 495h130M285 530h160"/>
+    <path d="M250 670h230"/>
+    <!-- generic skyline -->
+    <path d="M520 670v-110h70v110M610 670v-150h90v150M720 670v-90h65v90M805 670v-130h75v130M900 670v-100h110v100M1040 670v-80h80v80"/>
+  </g>
+
+  <!-- Metro network -->
+  <path d="M90 790C350 690 515 760 730 615S1110 520 1515 330" stroke="url(#metro)" stroke-width="12" stroke-linecap="round" opacity=".58"/>
+  <path d="M70 850C330 780 590 840 760 715S1110 640 1520 520" stroke="#22D68A" stroke-width="6" stroke-linecap="round" opacity=".22"/>
+  <path d="M125 675C400 590 620 610 830 480S1220 380 1490 245" stroke="#52B8FF" stroke-width="5" stroke-linecap="round" opacity=".18"/>
+
+  <!-- Stations -->
+  <g fill="#06100E" stroke="#F5FBF8" stroke-width="5" opacity=".78">
+    <circle cx="250" cy="737" r="13"/><circle cx="515" cy="700" r="13"/><circle cx="735" cy="610" r="13"/><circle cx="980" cy="540" r="13"/><circle cx="1220" cy="460" r="13"/><circle cx="1440" cy="365" r="13"/>
+  </g>
+
+  <!-- BRT route card -->
+  <g opacity=".22">
+    <rect x="1110" y="715" width="330" height="92" rx="46" fill="#FF744F"/>
+    <rect x="1165" y="737" width="95" height="48" rx="16" fill="#06100E" fill-opacity=".75"/>
+    <circle cx="1192" cy="791" r="9" fill="#F5FBF8"/>
+    <circle cx="1232" cy="791" r="9" fill="#F5FBF8"/>
+    <path d="M1180 750h64v27h-64z" stroke="#F5FBF8" stroke-width="4"/>
+    <path d="M1290 760h110" stroke="#F5FBF8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Metro train hint -->
+  <g opacity=".20" transform="translate(140 845)">
+    <rect width="240" height="78" rx="26" fill="#22D68A"/>
+    <rect x="30" y="20" width="180" height="34" rx="11" fill="#06100E" fill-opacity=".78"/>
+    <circle cx="65" cy="79" r="9" fill="#F5FBF8"/><circle cx="176" cy="79" r="9" fill="#F5FBF8"/>
+  </g>
+</svg>
